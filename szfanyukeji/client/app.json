@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/Products/Products",
+    "pages/business/business-cooperation/index",
+    "pages/business/channel-cooperation/index",
+    "pages/business/corporate-customer/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2c2e2e",
+    "navigationBarTitleText": "Greenback",
+    "navigationBarTextStyle": "white",
+    "navigationStyle": "custom "
+  }
+}

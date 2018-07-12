@@ -1,0 +1,157 @@
+<scroll-view class='All'>
+  <!-- 首页nav -->
+  <view class='navAll'>
+      <image class='nAllimg' src='../src/img/logo.png' mode='aspectFit'></image>
+      <image class='nAllright' src='../src/img/menu.png' mode='aspectFit' bindtap="showlist"></image>  
+  <!-- nav列表 -->
+      <view class='navlistall' wx:if="{{showlist}}">
+          <view class='navlist' wx:for="{{navlist}}" wx:key="{{index}}">
+              <view class='nlist' bindtap="showlist2" data-index="{{index}}">{{item.title}}
+                  <view class='nlist2' wx:if="{{item.flag}}" wx:key="{{index}}">
+                      <view class='box3' wx:for="{{item.list}}" catchtap="tapNavFun" wx:key="{{index}}" id='{{item.url}}'>
+                        {{item.title}}
+                      </view>
+                  </view>
+              </view>
+          </view>
+      </view>
+  <!-- nav列表 -->
+  </view>
+  
+
+  <!-- 首页banner -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+    <block wx:for="{{movies}}" wx:for-index="index" wx:key="{{index}}">  
+      <swiper-item>  
+        <image src="{{item.url}}" class="slide-image" mode="aspectFit"/>  
+      </swiper-item>  
+    </block>  
+  </swiper> 
+
+  <!-- Newproduct开始 -->
+  <view class='Newpd'>
+      <text class='n1'>装修实例</text>
+      <text class='n2'>-NEW PRODUCT-</text>
+      <text class='n3'></text>
+  </view>
+  <swiper class='Newpd-swiper' indicator-dots='true' autoplay='true' interval='5000' duration='1000'>
+    <block wx:for="{{Newproduct}}" wx:for-index="index" wx:key="{{index}}">
+      <swiper-item>
+        <image src='{{item.url}}' class='Newpd-img' mode="aspectFit" bindtap="previewImage" data-index='{{index}}' data-src='{{item.url}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- Newproduct结束 -->
+
+  <!-- 宣传/介绍开始 -->
+  <view class='HereWA'>
+      <text class='n1'>宣传视频</text>
+      <text class='n2'>-Here we are-</text>
+      <text class='n3'></text>
+  </view>
+  <video class='HereWAvideo' src='http://118.24.187.27/mymituo/upload/video/video.mp4' binderror="videoErrorCallback"></video>
+  <image class='HereWAimg' src='../src/img/HereWAimg.jpg' mode='aspectFit'></image>
+  <view class='HereWAtxt'>
+      <text class='HWt1'>室内设计有限公司是中国建筑装饰协会会员单位，揭阳市建筑装饰行业协会家装委员会副主任单位，是首批取得广州家庭装饰装修企业资格证的单位之一。"做品味装饰，创名牌企业"，正以饱满的热情和自信一路前行！</text>
+      <text class='HWt2'>其“品味装饰”商标具有较高的知名度，深受消费者的喜爱与信任。公司成立于1998年，已经成为中国室内装饰行业领军品牌，专业从事家居、商铺、酒店等设计与施工。在2014年10月15日，公司获得广州市工商行政管理局的审批，升格为集团企业，并正式设立广东室内装饰集团。目前已建立了完整的设计、施工、材料以及客户服务系统，取得了建设部门颁发的设计专项乙级，施工专项贰级资质,通过了ISO9001国际质量体系认证，2016年被评定为广东省著名商标。</text>
+      <view>更多介绍</view>
+  </view>
+  <!-- 宣传/介绍结束 -->
+  <!-- 团队介绍开始 -->
+  <view class='teampresen'>
+      <text class='Tp'>设计团队</text>
+      <text class='Tpcont1'>室内设计精英团队主创设计来自亚洲顶级室内设计公司，荣获多项国内外设计大奖，是一批具有强烈的创作欲望、善于思考、不断进取的设计师精英。</text>
+      <text class='Tpcont2'>团队有着丰富的室内设计创意及设计理念，更是有着多年的别墅豪宅、商业空间设计经验，且均来自美术学院、美工学院、美术大学等专业设计院校背景，更是有着国际化的视野及敏锐的时尚触觉，他们崇尚以设计为核心，设计创造价值，提出“无创意”“不设计”的设计理念服务每个客户。</text>
+      <view>更多介绍</view>
+  </view>
+  <!-- 团队介绍结束 -->
+  <!-- 中部轮播图 -->
+  <swiper class='content-swiper' indicator-dots='true' autoplay='true' interval='5000' duration='1000'>
+    <block wx:for="{{Newproduct}}" wx:for-index="index" wx:key="{{index}}">
+      <swiper-item>
+        <image src='{{item.url}}' class='content-img' mode="aspectFit" bindtap="previewImage" data-index='{{index}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 新闻开始 -->
+  <view class='newsinfotop'>
+      <text class='n1'>新闻资讯</text>
+      <text class='n3'></text>
+  </view>
+  <view class='newsinfocont'>
+      <view class='Ninfolist' wx:for="{{Ninfolist}}" wx:key="{{index}}">
+          <image class='NFimg' src='{{item.NFimg}}'></image>
+          <text class='NFtitle'>{{item.NFtitle}}</text>
+          <text class='NFtime'>{{item.NFtime}}</text>
+          <text class='NFcontent'>{{item.NFcontent}}</text>
+          <view>
+              标签：<text class='NFlabel' wx:for="{{item.NFlabel}}" wx:key="{{index}}">{{item.label}}</text>
+          </view>
+      </view>
+  </view>
+  <!-- 新闻结束 -->
+  <!-- 关于我们 -->
+  <view class='AboutUs'>
+      <text class='AUswe'>关于我们</text>
+      <view class='AUswelist'>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-sina.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-wechat.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+      </view>
+      <text class='AUsrela'>联系我们</text>
+      <view class='AUsrelalist'>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+      </view>
+      <text class='AUsnems'>新闻咨询</text>
+      <view class='AUsnemslist'>
+          <view>
+              <image src='../src/img/min01.jpg' mode='aspectFit'></image>
+              <text class='AUt1'>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+              <text class='AUt2'>2016-07-19</text>
+          </view>
+          <view>
+              <image src='../src/img/min02.png' mode='aspectFit'></image>
+              <text class='AUt1'>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+              <text class='AUt2'>2016-07-19</text>
+          </view>
+          <view>
+              <image src='../src/img/min03.jpg' mode='aspectFit'></image>
+              <text class='AUt1'>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+              <text class='AUt2'>2016-07-19</text>
+          </view>
+      </view>
+  </view>
+  <!-- 底部 -->
+  <view class='bottom'>
+      <text class='BT1'>友情链接：</text>
+      <text class='BT2'> / 室内设计师</text>  
+      <text class='BT2'> / 揭阳室内设计联盟</text> 
+      <text class='BT2'> / 中国家居装修协会</text>          
+  </view>
+  <!-- 回到顶部按钮 -->
+  <view class='gotop' wx:if="{{floorstatus}}" bindtap="goTop">
+      <image src='../src/img/arrow.png' mode='aspectFit'></image>
+  </view>
+</scroll-view>

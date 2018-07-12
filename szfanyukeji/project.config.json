@@ -1,0 +1,10 @@
+{
+	"miniprogramRoot": "./client",
+	"qcloudRoot": "./server",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx264d398066853821",
+	"projectname": "szfanyukeji",
+	"condition": {}
+}

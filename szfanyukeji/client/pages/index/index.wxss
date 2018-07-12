@@ -1,0 +1,378 @@
+page{font-size: 24rpx;}
+.All{width: 750rpx;display: block;float: left;}
+.navAll{
+    width: 750rpx;
+    height: 127rpx;
+    display: block;
+    float: left;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+    .nAllimg{
+        width: 326rpx;
+        height: 127rpx;
+        display: block;
+        float: left;
+        margin-left: 20rpx;
+        box-sizing: border-box;
+    }
+    .nAllright{
+        width: 148rpx;
+        height: 127rpx;
+        display: block;
+        float: right;
+        padding:30rpx 30rpx 30rpx 30rpx;
+        box-sizing:border-box;
+    }
+.navlistall{
+    width: 750rpx;
+    display: block;
+    position: absolute;
+    top: 128rpx;
+    left: 0;
+    z-index: 10;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 1rpx solid rgba(255, 255, 255, 0.1);
+}
+    .navlist{
+        display: block;
+        float: left;
+        width: 100%;
+        line-height: 84rpx;
+    }
+    .nlist{
+        display: block;
+        float: left;
+        width: 100%;
+        padding-left: 30rpx;
+        box-sizing: border-box;
+    }
+    .nlist2{
+        display: block;
+        float: left;
+        width: 100%;
+        line-height: 64rpx;
+        padding-left:30rpx;
+        background: rgba(0, 0, 0, 0.5);
+    }    
+
+.swiper{
+    width: 750rpx;
+    height: 363rpx;
+}
+    .swiper image{
+        width: 100%;
+        height: 100%;
+    }
+
+.Newpd{
+    width: 750rpx;
+    height: 387rpx;
+    background: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+    .Newpd text{
+        height: 58rpx;
+        line-height: 58rpx;
+        font-size: 54rpx;
+        color: #394a4f;
+    }
+    .n3{
+        border-bottom: 4rpx solid #394a4f;
+        width: 74rpx;
+    }
+    .Newpd-swiper{
+        width: 750rpx;
+        height: 440rpx;    
+    }
+        .Newpd-img{
+            width: 750rpx;
+            height: 440rpx; 
+        }
+.HereWA{
+    width: 750rpx;
+    height: 387rpx;
+    background: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+    .HereWA text{
+            height: 58rpx;
+            line-height: 58rpx;
+            font-size: 54rpx;
+            color: #394a4f;
+        }
+    .HereWAvideo{
+        width: 710rpx;
+        height: 394rpx;
+        float: left;
+        margin: 0 20rpx 110rpx 20rpx;
+        box-sizing: border-box;
+    }
+    .HereWAimg{
+        width: 750rpx;
+        height: 633rpx;
+        float: left;
+    }
+    .HereWAtxt{
+        display: block;
+        float: left;
+        width: 750rpx;
+        height: 1154rpx;
+        background: #f2f5f8;
+        padding: 236rpx 50rpx 138rpx 50rpx;
+        box-sizing: border-box;
+        font-size: 26rpx;
+        line-height: 44rpx;
+    }
+    .HereWAtxt text{
+        display: block;
+        float: left;
+        text-align: left;
+    }
+    .HWt1{margin-bottom: 28rpx;}
+    .HWt2{margin-bottom: 138rpx;}
+    .HereWAtxt view{
+        display: block;
+        float: left;
+        width: 210rpx;
+        height: 77rpx;
+        border: 2rpx solid #000;
+        text-align: center;
+        line-height: 77rpx;
+    }
+.teampresen{
+    display: block;
+    float: left;
+    width: 750rpx;
+    height: 1056rpx;
+    padding: 114rpx 50rpx 107rpx 50rpx;
+    box-sizing: border-box;
+}
+    .Tp{
+        display: block;
+        float: left;
+        width: 230rpx;
+        height: 55rpx;
+        font-size: 54rpx;
+        font-weight: 600;
+        margin-bottom: 70rpx;
+    }
+    .Tpcont1{
+        display: block;
+        float: left;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 32rpx;
+        line-height: 60rpx;
+        color: #7f7f7f;
+        margin-bottom: 30rpx;
+    }
+    .Tpcont2{
+        display: block;
+        float: left;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 28rpx;
+        line-height: 50rpx;
+        margin-bottom: 78rpx;
+    }
+    .teampresen view{
+        display: block;
+        float: left;
+        width: 210rpx;
+        height: 77rpx;
+        border: 2rpx solid #000;
+        text-align: center;
+        line-height: 77rpx;
+    }
+.content-swiper{
+    display: block;
+    float: left;
+    width: 750rpx;
+    height: 636rpx;  
+}
+    .content-img{
+        width: 750rpx;
+        height: 636rpx;
+    }
+.newsinfotop{
+    width: 750rpx;
+    height: 387rpx;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+    .newsinfotop text{
+        height: 58rpx;
+        line-height: 58rpx;
+        font-size: 54rpx;
+        color: #394a4f;
+    }
+.newsinfocont{
+    padding: 0 26rpx 0 26rpx;
+    box-sizing: border-box;
+    display: block;
+    float: left;
+    width: 750rpx;
+}
+    .Ninfolist{
+        width: 100%;
+        height: 802rpx;
+    }
+        .NFimg{
+            display: block;
+            float: left;
+            width: 100%;
+            height: 395rpx;
+            padding: 15rpx 0;
+        }
+        .NFtitle{
+            display: block;
+            float: left;
+            width: 100%;
+            height: 64rpx;
+            font-size: 32rpx;
+            line-height: 58rpx;
+        }
+        .NFtime{
+            display: block;
+            float: left;
+            width: 100%;
+            height: 86rpx;
+            padding-bottom: 30rpx;
+            color: #7a7a7a;
+        }
+        .NFcontent{
+            display: block;
+            float: left;
+            width: 100%;
+            height: 112rpx;
+            color: #7a7a7a;
+        }
+        .Ninfolist view{
+            width: 100%;
+            height: 48rpx;
+            line-height: 48rpx;
+            color: #7a7a7a;
+        }
+        .NFlabel{
+            height: 48rpx;
+            line-height: 48rpx;
+            margin-right: 12rpx;
+        }
+.AboutUs{
+    display: block;
+    float: left;
+    background: #3d3f3e;
+    color: #dfdfdf;
+    width: 750rpx;
+    padding: 160rpx 0 0 30rpx;    
+    box-sizing: border-box;
+}
+    .AUswe{
+        display: block;
+        width: 100%;
+        font-size: 34rpx;
+        height: 40rpx;
+        color: #dfdfdf;
+        margin-bottom: 108rpx;
+    }
+    .AUswelist{
+        width: 100%;
+        height: 180rpx;
+        display: flex;        
+    }
+    .AUswelist view{
+        margin-right: 30rpx;
+    }
+    .AUswelist view image{
+        width: 80rpx;
+        height: 80rpx;
+    }
+    .AUsrela{
+        display: block;
+        width: 100%;
+        font-size: 34rpx;
+        height: 40rpx;
+        color: #dfdfdf;
+        margin-bottom: 46rpx;
+    }
+    .AUsrelalist{
+        display: flex;
+        width: 100%;
+        height: 420rpx;
+        flex-direction: column;
+    }
+        .AUsrelalist view{
+            display: flex;
+            width: 100%;
+            height: 72rpx;
+            line-height: 72rpx;
+        }
+            .AUsrelalist view image{
+                width: 36rpx;
+                height: 36rpx;
+                margin:18rpx 34rpx 0 0;
+            }
+.AUsnems{
+    display: block;
+    width: 100%;
+    font-size: 34rpx;
+    height: 40rpx;
+    color: #dfdfdf;
+    margin-bottom: 46rpx;
+}
+    .AUsnemslist{
+        width: 100%;
+        height: 368rpx;
+        margin-bottom: 120rpx;
+    }
+    .AUsnemslist view{
+        display: block;
+        float: left;
+        width: 100%;
+        height: 124rpx;
+    }
+    .AUsnemslist view image{
+        display: block;
+        float: left;
+        width: 100rpx;
+        height: 100rpx;
+        margin-right: 20rpx;
+    }
+    .AUsnemslist view text{display: block;float: left;line-height: 50rpx;}
+.bottom{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 192rpx;
+    background: #2c2e2e;
+    padding: 44rpx 104rpx;
+    box-sizing: border-box;
+    color: #7a7a7a;
+    font-size: 26rpx;
+}
+    .BT2{color: #dfdfdf;}
+.gotop{
+    display: block;
+    position: fixed;
+    bottom: 20rpx;
+    right: 20rpx;
+    width: 60rpx;
+    height: 60rpx;
+    z-index: 999;
+    background: green;
+}
+    .gotop image{width: 40rpx;height: 40rpx;margin: 10rpx 10rpx;}
