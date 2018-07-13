@@ -19,7 +19,27 @@ Page({
           { url: '../src/img/Newproduct06.jpg' },
           { url: '../src/img/Newproduct07.jpg' }
         ],
-
+        // wisdom数据
+        wisdom:[
+          {
+            icon:'../src/img/icon-1.png',
+            headline:'智慧家庭',
+            content:'轻松打造更舒适、便捷、安全的全宅智能生活',
+            img:'../src/img/zh01.png'
+          },
+          {
+            icon: '../src/img/icon-2.png',
+            headline: '智慧办公',
+            content: '为办公环境提供更节能、更高效的智能体验，节省高达41%的能源开支',
+            img: '../src/img/zh02.png'
+          },
+          {
+            icon: '../src/img/icon-3.png',
+            headline: '智慧酒店',
+            content: '创新型全智能化客房控制系统,让顾客享受超五星级的入住体验',
+            img: '../src/img/zh03.png'
+          }
+        ],
         // 新闻咨询列表
         Ninfolist:[
           { 
@@ -76,9 +96,9 @@ Page({
             title: '商务合作 ▼',
               flag: false,
               list: [
-                { title: '商务合作', url: '../business/business-cooperation/index' },
-                { title: '渠道合作', url: '../business/channel-cooperation/index' },
-                { title: '企业客户', url: '../business/corporate-customer/index' }
+                { title: '商务合作' },
+                { title: '渠道合作' },
+                { title: '企业客户' }
               ]
           },
           { 
@@ -134,16 +154,11 @@ Page({
           })
         }      
     },
-    tapNavFun(e) {
-      wx.redirectTo({
-        url: e.currentTarget.id
-      });
-    },
     // 点击显示隐藏2级列表
     showlist2: function (e) {
       console.log(e)
       var index = e.target.dataset.index      
-      // console.log(index)
+      console.log(index)
       const list = "navlist[" + index + "].flag"
       var navlist = this.data.navlist[index].flag
       console.log(navlist)

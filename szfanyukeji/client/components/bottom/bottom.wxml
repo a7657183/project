@@ -1,0 +1,64 @@
+<!-- 关于我们 -->
+  <view class='AboutUs'>
+      <text class='AUswe'>关于我们</text>
+      <view class='AUswelist'>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-sina.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-wechat.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+          <view><image src='../src/img/logo-qq.png' mode='aspectFit'></image></view>
+      </view>
+      <text class='AUsrela'>联系我们</text>
+      <view class='AUsrelalist'>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+          <view>
+              <image src='../src/img/logo-Printer.png' mode='aspectFit'></image>
+              <text>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+          </view>
+      </view>
+      <text class='AUsnems'>新闻咨询</text>
+      <view class='AUsnemslist'>
+          <view>
+              <image src='../src/img/min01.jpg' mode='aspectFit'></image>
+              <text class='AUt1'>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+              <text class='AUt2'>2016-07-19</text>
+          </view>
+          <view>
+              <image src='../src/img/min02.png' mode='aspectFit'></image>
+              <text class='AUt1'>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+              <text class='AUt2'>2016-07-19</text>
+          </view>
+          <view>
+              <image src='../src/img/min03.jpg' mode='aspectFit'></image>
+              <text class='AUt1'>中国·广东揭阳人民政府左侧酒店五楼M1156间</text>
+              <text class='AUt2'>2016-07-19</text>
+          </view>
+      </view>
+  </view>
+  <!-- 底部 -->
+  <view class='bottom'>
+      <text class='BT1'>友情链接：</text>
+      <text class='BT2'> / 室内设计师</text>  
+      <text class='BT2'> / 揭阳室内设计联盟</text> 
+      <text class='BT2'> / 中国家居装修协会</text>          
+  </view>
+  <!-- 回到顶部按钮 -->
+  <view class='gotop' wx:if="{{floorstatus}}" bindtap="goTop">
+      <image src='../src/img/arrow.png' mode='aspectFit'></image>
+  </view>

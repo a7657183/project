@@ -1,54 +1,100 @@
-.All{width: 750rpx;display: block;float: left;}
-.navAll{
-    width: 750rpx;
-    display: block;
-    float: left;
-    background: rgba(0, 0, 0, 1);
-}
-    .nAllimg{
-        width: 326rpx;
-        height: 127rpx;
-        display: block;
-        float: left;
-        margin-left: 20rpx;
-        box-sizing: border-box;
-    }
-    .nAllright{
-        width: 148rpx;
-        height: 127rpx;
-        display: block;
-        float: right;
-        padding:30rpx 30rpx 30rpx 30rpx;
-        box-sizing:border-box;
-    }
 page{font-size: 24rpx;}
-.navlistall{
-    width:750rpx;
-    display:block;    
-    z-index:10;
-    color:#fff;
-    background:rgba(0, 0, 0, 0.4);
-    border-top:1rpx solid #eee;
-    float:left;
+.Products{
+    width: 750rpx;
+    float: left;
 }
-    .navlist{
-        display: block;
-        float: left;
-        width: 100%;
-        line-height: 84rpx;
+    .topimg{
+        width: 750rpx;
+        height: 800rpx;
+        position: relative;
     }
-    .nlist{
+    .PDtext{
         display: block;
-        float: left;
-        width: 100%;
-        padding-left: 30rpx;
-        box-sizing: border-box;
+        height: 80rpx;
+        width: 160rpx;
+        line-height: 80rpx;
+        position: absolute;
+        top: 360rpx;
+        left: 295rpx;
+        color: #fff;
+        font-weight: 600;
+        font-size: 32rpx;
+        text-align: center;
+        box-shadow: 0px 0px 400px #000;
     }
-    .nlist2{
+.navbar{  
+  background: #fff;  
+  height: 104rpx;
+  white-space: nowrap;
+  color: #9b9ba4;
+}
+    .item{
+      line-height: 96rpx;  
+      font-size:14px;
+      padding:0 30rpx 0 30rpx;
+      display: inline-flex;
+      position: relative;
+    }
+    .navbarlist{
+      position:absolute;
+      top:104rpx;
+      left:0rpx;
+      background:#fff;
+      width: 316rpx;      
+    }
+    .item2{      
+      display: block;
+      width: 316rpx;
+      height: 46rpx;
+      line-height: 46rpx;
+    }
+    /* 顶部导航字体颜色 */
+    .navbar .item.active{  
+      color: #78ac60;  
+    }  
+/* 内容列表样式 */
+.contentwarp{
+    width: 750rpx;
+    padding: 10rpx 20rpx 10rpx 20rpx;
+    box-sizing: border-box;
+    background: #f1f4f7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .CLlist{
         display: block;
         float: left;
+        width: 345rpx;
+        height: 324rpx;
+        margin:10rpx 0 10rpx 0;
+    }
+    .CLlist image{
+        width: 345rpx;
+        height: 260rpx;
+    }
+    .CLlist text{
+        display: block;
         width: 100%;
-        line-height: 64rpx;
-        padding-left:30rpx;
-        background: rgba(0, 0, 0, 0.5);
-    }    
+        text-align: center;
+        line-height: 52rpx;
+        background: #fff;
+    }
+.navbarBox{
+  position: relative;
+}
+.navbarBoxMenu{
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  display: none;
+}
+.activeMenu{
+  display: block;
+}
+.navbarBoxMenu-list{
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eeeeee;
+}

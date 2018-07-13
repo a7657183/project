@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/Products/Products",
-    "pages/business/business-cooperation/index",
-    "pages/business/channel-cooperation/index",
-    "pages/business/corporate-customer/index"
+    "components/top/top",
+    "pages/index/index",
+    "components/bottom/bottom",
+    "pages/AboutUs/AboutUs"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

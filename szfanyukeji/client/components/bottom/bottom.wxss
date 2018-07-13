@@ -1,0 +1,104 @@
+.AboutUs{
+    display: block;
+    float: left;
+    background: #3d3f3e;
+    color: #dfdfdf;
+    width: 750rpx;
+    padding: 160rpx 0 0 30rpx;    
+    box-sizing: border-box;
+}
+    .AUswe{
+        display: block;
+        width: 100%;
+        font-size: 34rpx;
+        height: 40rpx;
+        color: #dfdfdf;
+        margin-bottom: 108rpx;
+    }
+    .AUswelist{
+        width: 100%;
+        height: 180rpx;
+        display: flex;        
+    }
+    .AUswelist view{
+        margin-right: 30rpx;
+    }
+    .AUswelist view image{
+        width: 80rpx;
+        height: 80rpx;
+    }
+    .AUsrela{
+        display: block;
+        width: 100%;
+        font-size: 34rpx;
+        height: 40rpx;
+        color: #dfdfdf;
+        margin-bottom: 46rpx;
+    }
+    .AUsrelalist{
+        display: flex;
+        width: 100%;
+        height: 420rpx;
+        flex-direction: column;
+    }
+        .AUsrelalist view{
+            display: flex;
+            width: 100%;
+            height: 72rpx;
+            line-height: 72rpx;
+        }
+            .AUsrelalist view image{
+                width: 36rpx;
+                height: 36rpx;
+                margin:18rpx 34rpx 0 0;
+            }
+.AUsnems{
+    display: block;
+    width: 100%;
+    font-size: 34rpx;
+    height: 40rpx;
+    color: #dfdfdf;
+    margin-bottom: 46rpx;
+}
+    .AUsnemslist{
+        width: 100%;
+        height: 368rpx;
+        margin-bottom: 120rpx;
+    }
+    .AUsnemslist view{
+        display: block;
+        float: left;
+        width: 100%;
+        height: 124rpx;
+    }
+    .AUsnemslist view image{
+        display: block;
+        float: left;
+        width: 100rpx;
+        height: 100rpx;
+        margin-right: 20rpx;
+    }
+    .AUsnemslist view text{display: block;float: left;line-height: 50rpx;}
+.bottom{
+    display: block;
+    float: left;
+    width: 100%;
+    height: 192rpx;
+    background: #2c2e2e;
+    padding: 44rpx 104rpx;
+    box-sizing: border-box;
+    color: #7a7a7a;
+    font-size: 26rpx;
+}
+    .BT2{color: #dfdfdf;}
+.gotop{
+    display: block;
+    position: fixed;
+    bottom: 20rpx;
+    right: 20rpx;
+    width: 60rpx;
+    height: 60rpx;
+    z-index: 999;
+    background: #66a14b;
+}
+    .gotop image{width: 40rpx;height: 40rpx;margin: 10rpx 10rpx;}

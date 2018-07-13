@@ -1,20 +1,38 @@
 <scroll-view class='All'>
-  <!-- 首页nav -->
-  <view class='navAll'>
-      <image class='nAllimg' src='../src/img/logo.png' mode='aspectFit'></image>
-      <image class='nAllright' src='../src/img/menu.png' mode='aspectFit' bindtap="showlist"></image>  
-  <!-- nav列表 -->
-      <view class='navlistall' wx:if="{{showlist}}">
-          <view class='navlist' wx:for="{{navlist}}" wx:key="{{index}}">
-              <view class='nlist' bindtap="showlist2" data-index="{{index}}">{{item.title}}
-                  <view class='nlist2' wx:if="{{item.flag}}" wx:key="{{index}}">
-                      <view class='box3' wx:for="{{item.list}}" wx:key="{{index}}">
-                        {{item.title}}
-                      </view>
-                  </view>
+<top />
+    <scroll-view class='Products'>
+        <image class='topimg' src='../src/img/product.jpg' mode='aspectFill'></image>
+        <text class='PDtext'>产品中心</text>
+        <!-- 次级导航条 -->
+        <view class='navbarBox'>
+          <scroll-view class="navbar" scroll-x="true">  
+              <view 
+              wx:for="{{navbar}}" 
+              data-index="{{index}}" 
+              class="item {{currentTab==index ? 'active' : ''}}" 
+              wx:key="unique" bindtap="navbarTap">
+                {{item.title}} 
               </view>
-          </view>
-      </view>
-  <!-- nav列表 -->
-  </view>
+          </scroll-view>
+          <view class="navbarBoxMenu {{ showView ? 'activeMenu' : ''}}">
+              <navigator 
+              wx:for="{{navbarList}}" 
+              url="item.url"  
+              class='navbarBoxMenu-list'
+              bindtap="navbarMenuFun"
+              wx:key="{{index}}">{{item.title}}</navigator > 
+          </view>        
+        </view>
+
+        <!-- 次级导航条 -->
+        <!-- 内容列表 -->
+        <view class='contentwarp'>
+            <view class='CLlist' wx:for="{{contentlist}}" wx:key="{{index}}">
+                <image src='{{item.img}}'></image>
+                <text>{{item.title}}</text>
+            </view>
+        </view>
+        <!-- 内容列表 -->
+    </scroll-view>
+<bottom />  
 </scroll-view>

@@ -2,91 +2,96 @@
 Page({
   
   data: {
-    // 导航栏列表
-    navlist: [
+    showView: false,
+    navbarList: [],
+    navbar: [
       { title: '网站首页' },
       {
-        title: '产品中心 ▼',
-        flag: false,
-        list: [
-          { title: '全部' },
-          { title: '消费类电子' },
-          { title: '智能家具' },
-          { title: '智能汽车配件' },
-          { title: '其他业务' },
-        ]
+        title: '消费类电子 ▾',
+        flag: false
       },
       {
-        title: '商务合作 ▼',
-        flag: false,
-        list: [
-          { title: '商务合作' },
-          { title: '渠道合作' },
-          { title: '企业客户' }
-        ]
+        title: '智能家居 ▾',
+        flag: false
       },
       {
-        title: '产品购买 ▼',
-        flag: false,
-        list: [
-          { title: '全部' },
-          { title: '淘宝' },
-          { title: '京东' }
-        ]
+        title: '智能汽车配件 ▾',
+        flag: false
       },
       {
-        title: '关于我们 ▼',
-        flag: false,
-        list: [
-          { title: '全部' },
-          { title: '淘宝' },
-          { title: '京东' }
-        ]
-      },
-      { title: '联系我们' },
-      {
-        title: '科技创新 ▼',
-        flag: false,
-        list: [
-          { title: '科技创新' },
-          { title: '技术研发中心介绍' },
-          { title: '资格认证' },
-          { title: '技术支持' }
-        ]
+        title: '其他业务 ▾',
+        flag: false
       }
     ],
-    showlist: false,
-    showlist2: false,
-  },
-  // 点击显示隐藏1级列表
-  showlist: function (res) {
-    var that = this
-    if (that.data.showlist === true) {
-      that.setData({
-        showlist: false
-      })
-    } else {
-      that.setData({
-        showlist: true
-      })
-    }
-  },
-  // 点击显示隐藏2级列表
-  showlist2: function (e) {
-    console.log(e)
-    var index = e.target.dataset.index
-    console.log(index)
-    const list = "navlist[" + index + "].flag"
-    var navlist = this.data.navlist[index].flag
-    console.log(navlist)
-    if (navlist) {
-      this.setData({
-        [list]: false
-      })
-    } else {
-      this.setData({
-        [list]: true
-      })
-    }
+    currentTab: 0,    
+    contentlist: [
+      {
+        title: '消费类电子',
+        img: '../src/img/HereWAimg.jpg'      
+      },
+      {
+        title: '消费类电子',
+        img: '../src/img/HereWAimg.jpg'
+      },
+      {
+        title: '消费类电子',
+        img: '../src/img/HereWAimg.jpg'
+      },
+      {
+        title: '消费类电子',
+        img: '../src/img/HereWAimg.jpg'
+      },
+    ]
   },  
+  onLoad(options) {
+    showView: (options.showView === "true" ? true : false);
+  },
+  //tap赋值选中下标
+  navbarMenuFun() {
+    this.setData({
+      showView: false
+    });
+  },
+  navbarTap: function (e) {
+    console.log(e);
+
+    const val = e.currentTarget.dataset.index;
+    let textList = []
+    if (val === 1) {
+      textList = [
+        { title: '全部', url: '1' },
+        { title: '平板', url: '2' },
+        { title: '手提电脑', url: '3' },
+        { title: '机顶盒', url: '4' },
+        { title: '翻译机（新品）', url: '5' }
+      ];
+    }
+    if (val === 2) {
+      textList = [
+        { title: '全部' },
+        { title: '教育机器人（新品）' },
+        { title: '智能水杯（新品）' },
+        { title: '智能插头' },
+        { title: 'LED灯' },
+      ];
+    }
+    if (val === 3) {
+      textList = [
+        { title: '全部' },
+        { title: '无线车载充（新品）' },
+        { title: '车载蓝牙耳机' },
+      ];
+    }
+    if (val === 4) {
+      textList = [
+        { title: '全部' },
+        { title: '美容美发产品' },
+      ];
+    }
+    this.setData({
+      currentTab: e.currentTarget.dataset.index,
+      navbarList: textList,
+      showView: true
+    });
+  },
 })

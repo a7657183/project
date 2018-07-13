@@ -2,14 +2,9 @@ page{font-size: 24rpx;}
 .All{width: 750rpx;display: block;float: left;}
 .navAll{
     width: 750rpx;
-    height: 127rpx;
     display: block;
     float: left;
-    background: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+    background: rgba(0, 0, 0, 1);
 }
     .nAllimg{
         width: 326rpx;
@@ -28,15 +23,13 @@ page{font-size: 24rpx;}
         box-sizing:border-box;
     }
 .navlistall{
-    width: 750rpx;
-    display: block;
-    position: absolute;
-    top: 128rpx;
-    left: 0;
-    z-index: 10;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.4);
-    border-top: 1rpx solid rgba(255, 255, 255, 0.1);
+    width:750rpx;
+    display:block;    
+    z-index:10;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.4);
+    border-top:1rpx solid #000;
+    float:left;
 }
     .navlist{
         display: block;
@@ -59,8 +52,9 @@ page{font-size: 24rpx;}
         padding-left:30rpx;
         background: rgba(0, 0, 0, 0.5);
     }    
-
 .swiper{
+    display: block;
+    float: left;
     width: 750rpx;
     height: 363rpx;
 }
@@ -68,6 +62,54 @@ page{font-size: 24rpx;}
         width: 100%;
         height: 100%;
     }
+.wisdomlist{
+    width: 750rpx;
+    height: 690rpx;
+    display: flex;
+    justify-content: space-between;
+}
+    .wllist{
+        width: 246rpx;
+        height: 690rpx;
+        display: block;
+        float: left;
+        background: #f9fdfe;
+    }
+        .wlicon{
+            width: 100%;
+            height: 164rpx;
+            display: block;
+            float: left;
+            padding: 48rpx 48rpx;
+            box-sizing: border-box;
+        }
+        .wltitle{
+            width: 100%;
+            height: 36rpx;
+            display: block;
+            float: left;
+            text-align: center;
+            margin-bottom:40rpx;
+            font-size:32rpx;
+            font-weight: 600;
+        }
+        .wlcontent{
+            width: 100%;
+            height: 124rpx;
+            display: block;
+            float: left;
+            padding: 0 6rpx 0 6rpx;
+            box-sizing: border-box;
+            text-align: center;
+            line-height:34rpx;
+            margin-bottom:38rpx;
+        }
+        .wlimg{
+            width: 100%;
+            height: 288rpx;
+            display: block;
+            float: left;
+        }
 
 .Newpd{
     width: 750rpx;
@@ -127,9 +169,9 @@ page{font-size: 24rpx;}
         display: block;
         float: left;
         width: 750rpx;
-        height: 1154rpx;
+        height: 866rpx;
         background: #f2f5f8;
-        padding: 236rpx 50rpx 138rpx 50rpx;
+        padding: 70rpx 50rpx 138rpx 50rpx;
         box-sizing: border-box;
         font-size: 26rpx;
         line-height: 44rpx;
@@ -140,7 +182,7 @@ page{font-size: 24rpx;}
         text-align: left;
     }
     .HWt1{margin-bottom: 28rpx;}
-    .HWt2{margin-bottom: 138rpx;}
+    .HWt2{margin-bottom: 50rpx;}
     .HereWAtxt view{
         display: block;
         float: left;
@@ -154,8 +196,8 @@ page{font-size: 24rpx;}
     display: block;
     float: left;
     width: 750rpx;
-    height: 1056rpx;
-    padding: 114rpx 50rpx 107rpx 50rpx;
+    height: 866rpx;
+    padding: 60rpx 50rpx 107rpx 50rpx;
     box-sizing: border-box;
 }
     .Tp{
@@ -184,7 +226,7 @@ page{font-size: 24rpx;}
         box-sizing: border-box;
         font-size: 28rpx;
         line-height: 50rpx;
-        margin-bottom: 78rpx;
+        margin-bottom: 50rpx;
     }
     .teampresen view{
         display: block;
@@ -373,6 +415,6 @@ page{font-size: 24rpx;}
     width: 60rpx;
     height: 60rpx;
     z-index: 999;
-    background: green;
+    background: #66a14b;
 }
     .gotop image{width: 40rpx;height: 40rpx;margin: 10rpx 10rpx;}
